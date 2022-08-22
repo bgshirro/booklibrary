@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <p>Small Project</p>
+            <h1>Bookshelf Apps</h1>
+            <h2>Temukan daftar bukumu dengan mudah disini</h2>
+        </div>
+        <div class="search-box">
+            <form id="searchBook">
+                <input type="text" name="search" id="searchBookTitle" placeholder="Cari buku">
+            </form>
+        </div>
+    </header>
+    <div class="contain">
+        <div class="left-side">
+            <h3>Belum Dibaca</h3>
+            <div id="incompleteBookshelfList">
+
+            </div>
+        </div>
+        <div class="right-side">
+            <h3>Selesai Dibaca</h3>
+            <div id="completeBookshelfList">
+
+            </div>
+        </div>
+    </div>
+    <div class="form-contain">
+        <button type="add" class="add-btn" onclick="openPopUp()">+ Tambah Buku</button>
+    </div>
+    <div class="popUp" id="popUp">
+        <form action="" id="inputBook">
+        <input type="text" name="title" id="inputBookTitle" placeholder="Judul buku">
+        <input type="text" name="author" id="inputBookAuthor" placeholder="Penulis">
+        <input type="number" name="year" id="inputBookYear" placeholder="Tahun rilis">
+        <div class="check-box">
+            <input type="checkbox" name="isRead" id="inputBookIsComplete">
+            <label for="isRead">Tandai telah dibaca</label>
+        </div>
+        <div class="submit">
+            <button type="submit" class="submit-btn" onclick="closePopUp()">Simpan</button>
+        </div>
+        </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
