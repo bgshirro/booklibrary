@@ -167,7 +167,7 @@ function addAction(inputBookIsComplete, idBook) {
 function createActionDelete(idBook) {
     const actionDelete = document.createElement("button");
     actionDelete.classList.add("btn-delete");
-    actionDelete.innerHTML = '<img src="icon/Delete icon.svg">';
+    actionDelete.innerHTML = '<img src="icon/Delete Icon.svg">';
 
     actionDelete.addEventListener("click", function () {
         let confirmation = confirm("Apakah anda yakin ingin menghapus buku tersebut?");
